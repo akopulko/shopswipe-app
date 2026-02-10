@@ -1,0 +1,276 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #fff;
+    padding: 1rem 0;
+    border-bottom: 1px solid #eee;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #4CAF50;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 20px;
+    background: linear-gradient(to right, #6dd5ed, #2193b0);
+    color: #fff;
+    text-align: center;
+    min-height: 500px;
+}
+
+.hero-content {
+    max-width: 600px;
+    margin-right: 40px;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+    opacity: 0.9;
+}
+
+.call-to-action {
+    background: #FFC107; /* Amber */
+    color: #333;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.call-to-action:hover {
+    background-color: #FFA000; /* Darker Amber */
+    transform: translateY(-2px);
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* General Section Styling */
+section {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+}
+
+section:nth-of-type(even) {
+    background-color: #f9f9f9;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #4CAF50;
+}
+
+/* Features Section */
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    text-align: center;
+}
+
+.feature-item {
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.feature-item:hover {
+    transform: translateY(-5px);
+}
+
+.feature-item h3 {
+    font-size: 1.7rem;
+    color: #2193b0;
+    margin-bottom: 15px;
+}
+
+.feature-item p {
+    font-size: 1.1rem;
+    color: #666;
+}
+
+/* Download Section */
+.download {
+    text-align: center;
+    background: #4CAF50;
+    color: #fff;
+}
+
+.download h2 {
+    color: #fff;
+}
+
+.download-buttons {
+    margin-top: 30px;
+}
+
+.download-buttons a {
+    display: inline-block;
+    background: #fff;
+    color: #4CAF50;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin: 0 15px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.download-buttons a:hover {
+    background-color: #eee;
+    color: #388E3C;
+}
+
+/* Contact Section */
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact input[type="text"],
+.contact input[type="email"],
+.contact textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contact textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.contact button[type="submit"] {
+    background: #2193b0;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact button[type="submit"]:hover {
+    background-color: #1a7b93;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        padding: 60px 20px;
+    }
+
+    .hero-content {
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav ul {
+        margin-top: 15px;
+    }
+
+    nav ul li {
+        margin: 0 10px;
+    }
+
+    .feature-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .download-buttons a {
+        margin: 10px 0;
+        display: block;
+    }
+}
