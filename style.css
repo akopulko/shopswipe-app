@@ -2,15 +2,18 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     line-height: 1.6;
-    color: #333;
-    background-color: #f4f4f4;
+    color: #e0e0e0;
+    /* Light gray text for dark background */
+    background-color: #000;
+    /* Black background */
 }
 
 header {
-    background: #fff;
+    background: #000;
+    /* Black background */
     padding: 1rem 0;
-    border-bottom: 1px solid #eee;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-bottom: 1px solid #2a3850;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 nav {
@@ -23,9 +26,10 @@ nav {
 }
 
 .logo {
-    font-size: 1.8rem;
+    font-size: 2.5rem;
     font-weight: bold;
-    color: #4CAF50;
+    color: #6dd5ed;
+    /* Light blue from original gradient */
 }
 
 nav ul {
@@ -41,13 +45,15 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #555;
+    color: #c0c0c0;
+    /* Light gray for nav links */
     font-weight: 500;
     transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-    color: #4CAF50;
+    color: #6dd5ed;
+    /* Light blue from original gradient */
 }
 
 /* Hero Section */
@@ -56,7 +62,8 @@ nav ul li a:hover {
     justify-content: center;
     align-items: center;
     padding: 80px 20px;
-    background: linear-gradient(to right, #6dd5ed, #2193b0);
+    background: #000;
+    /* Changed from gradient to black */
     color: #fff;
     text-align: center;
     min-height: 500px;
@@ -79,8 +86,14 @@ nav ul li a:hover {
 }
 
 .call-to-action {
-    background: #FFC107; /* Amber */
-    color: #333;
+    display: inline-block;
+    /* Ensure link respects padding like a button */
+    text-decoration: none;
+    /* Remove underline from link */
+    background: #FFC107;
+    /* Amber */
+    color: #121a2a;
+    /* Dark text for contrast on yellow */
     padding: 15px 30px;
     border: none;
     border-radius: 5px;
@@ -90,7 +103,8 @@ nav ul li a:hover {
 }
 
 .call-to-action:hover {
-    background-color: #FFA000; /* Darker Amber */
+    background-color: #FFA000;
+    /* Darker Amber */
     transform: translateY(-2px);
 }
 
@@ -98,7 +112,7 @@ nav ul li a:hover {
     max-width: 100%;
     height: auto;
     border-radius: 8px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 /* General Section Styling */
@@ -106,19 +120,22 @@ section {
     padding: 60px 20px;
     max-width: 1200px;
     margin: 0 auto;
-    background-color: #fff;
-    border-bottom: 1px solid #eee;
+    background-color: #000;
+    /* Black background */
+    border-bottom: 1px solid #2a3850;
 }
 
 section:nth-of-type(even) {
-    background-color: #f9f9f9;
+    background-color: #000;
+    /* Black background */
 }
 
 section h2 {
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 40px;
-    color: #4CAF50;
+    color: #6dd5ed;
+    /* Light blue from original gradient */
 }
 
 /* Features Section */
@@ -130,10 +147,11 @@ section h2 {
 }
 
 .feature-item {
-    background: #fff;
+    background: #000;
+    /* Black background */
     padding: 30px;
     border-radius: 8px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
 }
 
@@ -143,24 +161,28 @@ section h2 {
 
 .feature-item h3 {
     font-size: 1.7rem;
-    color: #2193b0;
+    color: #6dd5ed;
+    /* Light blue from original gradient */
     margin-bottom: 15px;
 }
 
 .feature-item p {
     font-size: 1.1rem;
-    color: #666;
+    color: #a0a0a0;
+    /* Lighter gray for feature text */
 }
 
 /* Download Section */
 .download {
     text-align: center;
-    background: #4CAF50;
+    background: transparent;
+    /* Inherit from section */
     color: #fff;
 }
 
 .download h2 {
-    color: #fff;
+    color: #6dd5ed;
+    /* Light blue from original gradient */
 }
 
 .download-buttons {
@@ -169,20 +191,23 @@ section h2 {
 
 .download-buttons a {
     display: inline-block;
-    background: #fff;
-    color: #4CAF50;
+    background: #FFC107;
+    /* Amber */
+    color: #121a2a;
+    /* Dark text for contrast */
     padding: 15px 30px;
     border-radius: 5px;
     text-decoration: none;
     font-size: 1.2rem;
     margin: 0 15px;
     transition: background-color 0.3s ease, color 0.3s ease;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 .download-buttons a:hover {
-    background-color: #eee;
-    color: #388E3C;
+    background-color: #FFA000;
+    /* Darker Amber */
+    color: #121a2a;
 }
 
 /* Contact Section */
@@ -199,9 +224,12 @@ section h2 {
 .contact textarea {
     width: 100%;
     padding: 12px;
-    border: 1px solid #ddd;
+    border: 1px solid #4a5870;
     border-radius: 5px;
     font-size: 1rem;
+    background: #000;
+    /* Black background */
+    color: #e0e0e0;
 }
 
 .contact textarea {
@@ -226,7 +254,8 @@ section h2 {
 
 /* Footer */
 footer {
-    background: #333;
+    background: #000;
+    /* Black background */
     color: #fff;
     text-align: center;
     padding: 20px 0;
