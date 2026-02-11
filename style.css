@@ -1,0 +1,305 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    line-height: 1.6;
+    color: #e0e0e0;
+    /* Light gray text for dark background */
+    background-color: #000;
+    /* Black background */
+}
+
+header {
+    background: #000;
+    /* Black background */
+    padding: 1rem 0;
+    border-bottom: 1px solid #2a3850;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #6dd5ed;
+    /* Light blue from original gradient */
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #c0c0c0;
+    /* Light gray for nav links */
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #6dd5ed;
+    /* Light blue from original gradient */
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 20px;
+    background: #000;
+    /* Changed from gradient to black */
+    color: #fff;
+    text-align: center;
+    min-height: 500px;
+}
+
+.hero-content {
+    max-width: 600px;
+    margin-right: 40px;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+    opacity: 0.9;
+}
+
+.call-to-action {
+    display: inline-block;
+    /* Ensure link respects padding like a button */
+    text-decoration: none;
+    /* Remove underline from link */
+    background: #FFC107;
+    /* Amber */
+    color: #121a2a;
+    /* Dark text for contrast on yellow */
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.call-to-action:hover {
+    background-color: #FFA000;
+    /* Darker Amber */
+    transform: translateY(-2px);
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* General Section Styling */
+section {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #000;
+    /* Black background */
+    border-bottom: 1px solid #2a3850;
+}
+
+section:nth-of-type(even) {
+    background-color: #000;
+    /* Black background */
+}
+
+section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #6dd5ed;
+    /* Light blue from original gradient */
+}
+
+/* Features Section */
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    text-align: center;
+}
+
+.feature-item {
+    background: #000;
+    /* Black background */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.feature-item:hover {
+    transform: translateY(-5px);
+}
+
+.feature-item h3 {
+    font-size: 1.7rem;
+    color: #6dd5ed;
+    /* Light blue from original gradient */
+    margin-bottom: 15px;
+}
+
+.feature-item p {
+    font-size: 1.1rem;
+    color: #a0a0a0;
+    /* Lighter gray for feature text */
+}
+
+/* Download Section */
+.download {
+    text-align: center;
+    background: transparent;
+    /* Inherit from section */
+    color: #fff;
+}
+
+.download h2 {
+    color: #6dd5ed;
+    /* Light blue from original gradient */
+}
+
+.download-buttons {
+    margin-top: 30px;
+}
+
+.download-buttons a {
+    display: inline-block;
+    background: #FFC107;
+    /* Amber */
+    color: #121a2a;
+    /* Dark text for contrast */
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin: 0 15px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.download-buttons a:hover {
+    background-color: #FFA000;
+    /* Darker Amber */
+    color: #121a2a;
+}
+
+/* Contact Section */
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact input[type="text"],
+.contact input[type="email"],
+.contact textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #4a5870;
+    border-radius: 5px;
+    font-size: 1rem;
+    background: #000;
+    /* Black background */
+    color: #e0e0e0;
+}
+
+.contact textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.contact button[type="submit"] {
+    background: #2193b0;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact button[type="submit"]:hover {
+    background-color: #1a7b93;
+}
+
+/* Footer */
+footer {
+    background: #000;
+    /* Black background */
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        padding: 60px 20px;
+    }
+
+    .hero-content {
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav ul {
+        margin-top: 15px;
+    }
+
+    nav ul li {
+        margin: 0 10px;
+    }
+
+    .feature-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .download-buttons a {
+        margin: 10px 0;
+        display: block;
+    }
+}
