@@ -139,37 +139,78 @@ section h2 {
 }
 
 /* Features Section */
-.feature-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-    text-align: center;
+.feature-container {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 .feature-item {
-    background: #000;
-    /* Black background */
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    text-align: left;
+    background: transparent;
+    padding: 0;
+    box-shadow: none;
     transition: transform 0.3s ease;
 }
 
+.feature-item:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.feature-text {
+    flex: 1;
+}
+
+.feature-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.feature-image img {
+    max-width: 280px;
+    /* Typical iPhone mockup width */
+    height: auto;
+    border-radius: 30px;
+    /* iPhone-like rounding */
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+    border: 8px solid #1a1a1a;
+    /* Simple bezel */
+    background: #000;
+}
+
+/* Fallback for missing images */
+.feature-image::before {
+    content: "Screenshot Placeholder";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #444;
+    font-size: 0.8rem;
+    z-index: -1;
+}
+
 .feature-item:hover {
-    transform: translateY(-5px);
+    transform: scale(1.02);
 }
 
 .feature-item h3 {
-    font-size: 1.7rem;
+    font-size: 2rem;
     color: #6dd5ed;
-    /* Light blue from original gradient */
     margin-bottom: 15px;
 }
 
 .feature-item p {
-    font-size: 1.1rem;
-    color: #a0a0a0;
-    /* Lighter gray for feature text */
+    font-size: 1.2rem;
+    color: #b0b0b0;
+    line-height: 1.6;
 }
 
 /* Download Section */
@@ -296,6 +337,21 @@ footer {
 
     .feature-grid {
         grid-template-columns: 1fr;
+    }
+
+    .feature-item,
+    .feature-item:nth-child(even) {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .feature-container {
+        gap: 60px;
+    }
+
+    .feature-image img {
+        max-width: 220px;
     }
 
     .download-buttons a {
