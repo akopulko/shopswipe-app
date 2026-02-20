@@ -213,6 +213,34 @@ section h2 {
     line-height: 1.6;
 }
 
+.feature-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0 0;
+    text-align: left;
+}
+
+.feature-list li {
+    font-size: 1.1rem;
+    color: #b0b0b0;
+    margin-bottom: 8px;
+    line-height: 1.6;
+    position: relative;
+    padding-left: 20px;
+}
+
+.feature-list li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #6dd5ed;
+    font-weight: bold;
+}
+
+.feature-list li strong {
+    color: #e0e0e0;
+}
+
 /* Download Section */
 .download {
     text-align: center;
