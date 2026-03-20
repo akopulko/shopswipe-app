@@ -4,16 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ShopSwipe - Your Ultimate Shopping Companion</title>
+    <meta name="description"
+        content="ShopSwipe helps you plan shopping faster, keep your pantry organized, and stay in control across iPhone and Mac.">
+    <title>ShopSwipe - Smart Shopping and Pantry Management for iPhone and Mac</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header>
+    <header class="site-header">
         <nav>
-            <div class="logo">ShopSwipe</div>
+            <a class="logo" href="#hero">
+                <img src="icon.png" alt="ShopSwipe app icon">
+                <span>ShopSwipe</span>
+            </a>
             <ul>
                 <li><a href="#features">Features</a></li>
+                <li><a href="#platforms">Platforms</a></li>
                 <li><a href="https://apps.apple.com/app/shopswipe-smart-pantry/id6758903407">Download</a></li>
                 <li><a href="https://github.com/akopulko/shopswipe-app/issues">Feedback</a></li>
                 <li><a href="mailto:appshopswipe@fastmail.com">Contact</a></li>
@@ -23,86 +29,179 @@
 
     <main>
         <section id="hero" class="hero">
-            <div class="hero-content">
-                <h1>Shop Smarter with Apple Intelligence.</h1>
-                <p>ShopSwipe combines intuitive design with on-device Apple Intelligence to revolutionize your grocery
-                    runs and pantry management on iOS.</p>
-                <a href="https://apps.apple.com/app/shopswipe-smart-pantry/id6758903407" class="call-to-action">Download
-                    on the App Store</a>
+            <div class="hero-copy reveal">
+                <p class="eyebrow">Available on iPhone and Mac</p>
+                <h1>Your grocery flow, finally under control.</h1>
+                <p class="hero-text">
+                    ShopSwipe turns scattered shopping notes into a fast, elegant system for your shopping list,
+                    pantry, and fridge. Build lists quicker, move items with a swipe, and stay organized with a native
+                    Apple experience across iOS and macOS.
+                </p>
+                <div class="hero-actions">
+                    <a href="https://apps.apple.com/app/shopswipe-smart-pantry/id6758903407" class="call-to-action">Download on the App Store</a>
+                    <a href="#features" class="secondary-action">See what it does</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-pill">
+                        <span class="stat-value">iPhone</span>
+                        <span class="stat-label">for shopping on the go</span>
+                    </div>
+                    <div class="stat-pill">
+                        <span class="stat-value">Mac</span>
+                        <span class="stat-label">for planning at home</span>
+                    </div>
+                    <div class="stat-pill">
+                        <span class="stat-value">AI</span>
+                        <span class="stat-label">smarter entry and icons</span>
+                    </div>
+                </div>
             </div>
-            <div class="hero-image">
-                <!-- Placeholder for an app screenshot or illustration -->
-                <img src="icon.png" alt="ShopSwipe iOS App Screenshot highlighting AI features">
+
+            <div class="hero-visual reveal">
+                <div class="hero-glow"></div>
+                <div class="device-wall">
+                    <div class="desktop-shot">
+                        <img src="screenshots/macos/Unsaved Image 8.jpg"
+                            alt="ShopSwipe on macOS showing the shopping workflow on desktop">
+                    </div>
+                    <div class="phone-stack">
+                        <img class="phone-back" src="screenshots/ios/Apple iPhone 16 Pro Max Screenshot 6.png"
+                            alt="ShopSwipe pantry workflow on iPhone">
+                        <img class="phone-front" src="screenshots/ios/Apple iPhone 16 Pro Max Screenshot 1.png"
+                            alt="ShopSwipe shopping list on iPhone">
+                    </div>
+                </div>
             </div>
         </section>
 
         <section id="features" class="features">
-            <h2>Amazing Features</h2>
+            <div class="section-heading reveal">
+                <p class="eyebrow">Why people buy it</p>
+                <h2>A better grocery routine in every screen.</h2>
+                <p>
+                    The structure stays simple: shop, store, and find what you have. The experience feels faster,
+                    cleaner, and more intentional than juggling notes, reminders, and memory.
+                </p>
+            </div>
+
             <div class="feature-container">
-                <div class="feature-item">
+                <article class="feature-item reveal">
                     <div class="feature-text">
-                        <h3>Total Inventory Control</h3>
-                        <p>Manage a <strong>Shopping List</strong>, <strong>Pantry</strong>, and <strong>Fridge</strong>
-                            from the same app using a native Tab Bar. Swipe right on any item to instantly move it
-                            between lists, or use bulk actions to move entire lists at once. Smart merging intelligently
-                            combines quantities for existing items, while date stamps track exactly when each item was
-                            added to your inventory.</p>
-                    </div>
-                    <div class="feature-image">
-                        <img src="pantry.png" alt="Pantry Management Screenshot">
-                    </div>
-                </div>
-
-                <div class="feature-item">
-                    <div class="feature-text">
-                        <h3>AI-Generated 3D Icons</h3>
-                        <p>Experience custom, high-quality 3D icons for every item, powered by on-device Apple
-                            Intelligence.
+                        <p class="feature-kicker">Core workflow</p>
+                        <h3>One place for your shopping list, pantry, and fridge</h3>
+                        <p>
+                            Keep the full grocery cycle in one app. Add what you need, move it into the pantry after a
+                            trip, then track what belongs in the fridge without duplicating work.
                         </p>
+                        <ul class="feature-list">
+                            <li>Native tab-based structure that stays easy to understand</li>
+                            <li>Built for quick daily use, not spreadsheet-style maintenance</li>
+                            <li>Designed to reduce forgotten items and duplicate purchases</li>
+                        </ul>
                     </div>
                     <div class="feature-image">
-                        <img src="3d_icons.png" alt="AI-Generated 3D Icons Screenshot">
+                        <img src="screenshots/ios/Apple iPhone 16 Pro Max Screenshot 1.png"
+                            alt="ShopSwipe shopping list on iPhone">
                     </div>
-                </div>
+                </article>
 
-                <div class="feature-item">
+                <article class="feature-item reveal">
                     <div class="feature-text">
-                        <h3>Predictive Text Suggestions</h3>
-                        <p>Leverage on-device LLMs for intelligent grocery suggestions as you type, making list creation
-                            faster.</p>
+                        <p class="feature-kicker">Fast actions</p>
+                        <h3>Move everything with swipes and bulk actions</h3>
+                        <p>
+                            ShopSwipe is built around momentum. Swipe items between lists, merge quantities when
+                            needed, and clear a full trip in seconds instead of editing entries one by one.
+                        </p>
+                        <ul class="feature-list">
+                            <li>Bulk move pantry items back into your shopping list</li>
+                            <li>Track when food was added to stay more organized</li>
+                            <li>Gesture-driven controls that feel native on iPhone</li>
+                        </ul>
                     </div>
                     <div class="feature-image">
-                        <img src="pred_text.png" alt="Predictive Text Suggestions Screenshot">
+                        <img src="screenshots/ios/Apple iPhone 16 Pro Max Screenshot 6.png"
+                            alt="ShopSwipe pantry bulk move action on iPhone">
                     </div>
-                </div>
+                </article>
 
-                <div class="feature-item">
+                <article class="feature-item reveal">
                     <div class="feature-text">
-                        <h3>Gesture-Driven UX</h3>
-                        <p>Enjoy a modern, intuitive interface with swipe gestures, pull-to-add, and long-press menus
-                            for
-                            effortless control.</p>
+                        <p class="feature-kicker">Apple-first intelligence</p>
+                        <h3>Smarter entry with predictive suggestions and custom icons</h3>
+                        <p>
+                            Typing groceries should not feel repetitive. ShopSwipe uses Apple Intelligence-powered
+                            features to speed up list creation and give items a polished visual identity.
+                        </p>
+                        <ul class="feature-list">
+                            <li>Predictive grocery suggestions while you type</li>
+                            <li>AI-generated 3D icons that make lists easier to scan</li>
+                            <li>An interface that feels premium, not utilitarian</li>
+                        </ul>
                     </div>
-                    <div class="feature-image">
-                        <img src="gesture.png" alt="Gesture-Driven UX Screenshot">
+                    <div class="feature-image feature-image-grid">
+                        <img src="screenshots/ios/Apple iPhone 16 Pro Max Screenshot 5.png"
+                            alt="ShopSwipe item entry and predictive suggestions on iPhone">
+                        <img src="screenshots/ios/Apple iPhone 16 Pro Max Screenshot 9.png"
+                            alt="ShopSwipe detailed item artwork and list visuals on iPhone">
                     </div>
-                </div>
+                </article>
 
-                <div class="feature-item">
+                <article id="platforms" class="feature-item reveal">
                     <div class="feature-text">
-                        <h3>Multi-language Support</h3>
-                        <p>🇩🇪 🇫🇷 🇪🇸</p>
-                        <p> ShopSwipe supports multi-language grocery items with clinical accuracy. The UI
-                            is fully translated into German, French, and Spanish, making it a truly global
-                            companion. </p>
+                        <p class="feature-kicker">Cross-device</p>
+                        <h3>Plan on Mac. Shop on iPhone.</h3>
+                        <p>
+                            The same clean system is available on macOS, so you can prepare a list at your desk and use
+                            the iPhone app when it is time to shop. It feels consistent across both platforms.
+                        </p>
+                        <ul class="feature-list">
+                            <li>Great for households that plan first and buy later</li>
+                            <li>Mac layout gives you more room to manage items comfortably</li>
+                            <li>iPhone keeps the experience fast in the store</li>
+                        </ul>
+                    </div>
+                    <div class="feature-image mac-feature">
+                        <img src="screenshots/macos/Unsaved Image 1.jpg"
+                            alt="ShopSwipe on macOS with a shopping list and add item panel">
+                    </div>
+                </article>
+
+                <article class="feature-item reveal">
+                    <div class="feature-text">
+                        <p class="feature-kicker">Built to feel personal</p>
+                        <h3>Modern, multilingual, and ready for everyday use</h3>
+                        <p>
+                            ShopSwipe supports German, French, and Spanish and keeps the interface approachable from
+                            the first launch. It is designed for repeated daily use, not a one-time setup.
+                        </p>
+                        <ul class="feature-list">
+                            <li>Localized UI for a broader audience</li>
+                            <li>Dark, high-contrast design that keeps focus on your items</li>
+                            <li>Simple enough to start using immediately</li>
+                        </ul>
                     </div>
                     <div class="feature-image">
-                        <img src="languages.jpeg" alt="Multi-language Support Screenshot">
+                        <img src="screenshots/ios/Apple iPhone 16 Pro Max Screenshot 10.png"
+                            alt="ShopSwipe language and settings support on iPhone">
                     </div>
-                </div>
+                </article>
             </div>
         </section>
 
+        <section class="download reveal">
+            <div class="download-panel">
+                <p class="eyebrow">Ready to try it?</p>
+                <h2>Buy the app once. Use it when every grocery trip starts.</h2>
+                <p>
+                    If you want a cleaner shopping routine and a pantry you can actually trust, ShopSwipe is built for
+                    that job.
+                </p>
+                <div class="download-buttons">
+                    <a href="https://apps.apple.com/app/shopswipe-smart-pantry/id6758903407" class="call-to-action">Get ShopSwipe</a>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer>
